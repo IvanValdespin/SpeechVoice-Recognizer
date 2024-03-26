@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">VoiceApp</string>
+
+    <string name="squareText">square text</string>
+    <string name="recordButton">record button</string>
+    <string name="readerButton">reader button</string>
+    <string name="NewUser">New User</string>
+    <string name="MP4_file">MP4 file</string>
+    <string name="MP3_file">MP3 file</string>
+
+    <string name="Sing_out">Sign out</string>
+
+    <string name="audioFile_MP3">.mp3</string>
+    <string name="audioFile_MP4">.mp4</string>
+
+    <string name="filename_request">request</string>
+    <string name="fileName_userName">name</string>
+    <string name="fileSample">sample</string>
+
+    <string name="Record">Recording</string>
+    <string name="Stop_recording">Stop Recording</string>
+    <string name="Language">en</string>
+    <string name="Country">GB</string>
+
+    <string name="Log">log.txt</string>
+
+    <string name="NewUser_Message">\n\n Registering new user \n\n Click on microphone button and say your name. \n\n
+        Click on microphone again to save your name file.</string>
+    <string name="welcome_message">\n\n Welcome, click on microphone to start recording, click it again to stop recording and send your message</string>
+
+    <string name="timelimit">\n\n You have exceeded the capture time, please make your request again</string>
+    <string name="GetUserName">\n\n The name has been captured.\n\n Press the microphone button once and keep speaking until the recording ends on its own</string>
+
+    <string name="sample">\n\Sample </string>
+    <string name="sample1"> completed \n\n Repeat the procedure to get next sample</string>
+    <string name="finalSample">\n\n Number of samples completed. \n\n Starting user registration</string>
+
+
+    <string name="Wifi_connection">Wi-Fi disconnected, please turn Wi-Fi on</string>
+
+    <string name="url_whisper">http://10.2.2.152:5000/whisper</string>
+    <string name="url_NewUser">http://10.2.2.152:5000/newUser</string>
+
+    <string name="LOG_AUDIOTEST">AudioRecorderTest: Prepare() method failed</string>
+    <string name="FILE_NOT_FOUND">ERASE_FILE_ERROR: File not found</string>
+    <string name="DELETE_FILE_ERROR">DELETE_FILE_ERROR: "File could not be deleted "</string>
+
+    <string name="LANGUAGE_FAIL">FAILURE: Language not supported</string>
+    <string name="TTS">TTS: Sintetic voice initialization failed</string>
+    <string name="TSS_FAIL">TTS FAIL: TTS not initialized</string>
+
+
+    <string name="CONNECTION_FAILURE">CONNECTION_FAILURE: Server connection filed</string>
+    <string name="CONNECTION_FAILURE_MESSAGE">\n\n Failed to make microservice connection. \n\n Try later</string>
+
+</resources>

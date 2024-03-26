@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageButton
+        android:id="@+id/recordbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginBottom="76dp"
+        android:adjustViewBounds="false"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/recordButton"
+        android:onClick="getRequest"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squaretext"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/baseline_mic_24"
+        app:tint="@color/black" />
+
+    <ImageButton
+        android:id="@+id/readerbutton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/readerButton"
+        android:onClick="readMessage"
+        android:padding="0dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.875"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squaretext"
+        app:srcCompat="@android:drawable/ic_lock_silent_mode_off"
+        app:tint="@color/black" />
+
+    <TextView
+        android:id="@+id/squaretext"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:allowUndo="false"
+        android:background="@drawable/ovalo"
+        android:backgroundTint="@color/test"
+        android:ellipsize="middle"
+        android:singleLine="false"
+        android:soundEffectsEnabled="false"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textIsSelectable="false"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.164" />
+
+    <ImageView
+        android:id="@+id/big"
+        android:layout_width="39dp"
+        android:layout_height="37dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="8dp"
+        android:onClick="makeBigger"
+        android:tint="#121111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squaretext"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageView
+        android:id="@+id/small"
+        android:layout_width="31dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="12dp"
+        android:onClick="makeSmaller"
+        android:tint="#0E0E0E"
+        app:layout_constraintEnd_toStartOf="@+id/big"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/squaretext"
+        app:srcCompat="@android:drawable/dialog_holo_light_frame" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

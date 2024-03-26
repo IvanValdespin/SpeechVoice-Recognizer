@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">VoiceApp</string>
+
+    <string name="squareText">Cuadro de texto</string>
+    <string name="recordButton">record button</string>
+    <string name="readerButton">reader button</string>
+    <string name="NewUser">Nuevo Usuario</string>
+    <string name="MP4_file">Formato MP4</string>
+    <string name="MP3_file">Formato MP3</string>
+    <string name="Sing_out">Cerrar App</string>
+
+
+
+
+    <string name="audioFile_MP3">.mp3</string>
+    <string name="audioFile_MP4">.mp4</string>
+
+    <string name="filename_request">request</string>
+    <string name="fileName_userName">name</string>
+    <string name="fileSample">sample</string>
+
+    <string name="Record">Grabando</string>
+    <string name="Stop_recording">Grabación terminada</string>
+    <string name="Language">es</string>
+    <string name="Country">MEX</string>
+
+    <string name="Log">log.txt</string>
+
+    <string name="welcome_message"> \n\n Bienvenido, presiona el micrófono para comenzar a hablar, presiónalo de nuevo para enviar tu mensaje </string>
+    <string name="NewUser_Message">\n\n Agregando nuevo usuario \n \nPresiona el micrófono y di tu nombre.\n \n
+                        Cuando finalices vuelve a presionar el micrófono para guardar tu nombre</string>
+
+    <string name="GetUserName">\n\n El nombre se ha capturado \n\n Presione el botón de micrófono una vez y manténgase hablando hasta que la grabación termine por si sola</string>
+
+    <string name="sample">\n\nMuestra </string>
+    <string name="sample1"> completada \n\n Repita el procedimiento para la captura de la siguiente muestra</string>
+    <string name="finalSample">\n\n Número de muestras completadas. \n\n Iniciando registro de usuario</string>
+
+    <string name="timelimit">\n\n Haz superado el tiempo de captura, por favor vuelva a realizar su petición</string>
+
+
+    <string name="Wifi_connection">Wi-Fi desactivado, porfavor <acti></acti>ve Wi-Fi </string>
+
+
+
+    <string name="url_whisper">http://10.177.37.202:5000/whisper</string>
+    <string name="url_NewUser">http://10.177.37.202:5000/newUser</string>
+
+    <string name="LOG_AUDIOTEST">AudioRecorderTest: Método Prepare() falló al cargar</string>
+    <string name="FILE_NOT_FOUND">Archivo no encontrado: No se ha encontrado el archivo a eliminar</string>
+    <string name="DELETE_FILE_ERROR">Error al eliminar archivo: "No se pudo eliminar el archivo"</string>
+        
+    <string name="LANGUAGE_FAIL">Falla de lenguaje: Lenguaje no soportado</string>
+    <string name="TTS">TTS: Inicialización de lector con voz sintética fallida</string>
+    <string name="TSS_FAIL"> Falla de TTS: TTS no pudo inicializar</string>
+
+    <string name="CONNECTION_FAILURE">Fallo de conexión: No se ha podido realizar la conexión con el servidor</string>
+    <string name="CONNECTION_FAILURE_MESSAGE">\n\n Error en la conexión con el microservicio. \n\n Intenta mas tarde</string>
+
+</resources>

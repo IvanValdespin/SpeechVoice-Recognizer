@@ -1,0 +1,45 @@
+{
+    "LANGUAGE":{
+
+        "message":"Selecciona idioma a utilizar\n 1.Español 2.Inglés\n Choose laguage\n 1.Spanish 2.English\n"                                                  
+    },
+    
+    "WHISPER":{
+
+        "whisper_model":"medium",
+        "device": "cpu",
+        "NEW_CONFIG":{
+            "encoder":"whisper_encoder.xml",            
+            "decoder":"whisper_decoder.xml"
+        }
+    },
+
+    "SPACY":{
+
+        "MODELS":{
+
+            "spanish":"es_core_news_md",
+            "english":"en_core_web_lg"
+        }
+    },
+
+    "CONFIG":{
+
+        "english":"EnglishConfig.json",
+        "spanish":"SpanishConfig.json"
+    },
+
+    "KAFKA":{
+        
+        "ip":"localhost:29092",
+        "topic":"core"
+    },
+    
+    "AUDIO":{
+        "wakeword":"wakeword.wav",
+        "request":"request.wav"
+    }
+
+}
+
+

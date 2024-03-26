@@ -1,0 +1,147 @@
+{
+    "OBJECTS":{
+
+         "LAMP":{
+            "sinonyms":["lamp","lights","brightness","color"],
+            "properties":["on","off"],
+            "actions":{
+                "turnon":["enable","start","illuminate","activate"],
+                "turnoff":["desable","deactivate","stop"],
+                "color": ["change","switch"],
+                "brightness_up": ["set","increase","rise","brighter"],
+                "brightness_down":["lower","decrease","dim","reduce"]
+            },
+
+            "colors":["white","green","blue","pink","brown","yellow","red","purple"]
+        },
+
+        "BLINDS":{
+
+            "sinonyms": ["blind","blinds","curtains","shades"],
+            "properties": ["up","down","stop"],
+            "actions":{ 
+                "up":["up","open","rise"],
+                "down":["down","close","draw","drop","lower"],
+                "stop":["stop","halt"]}
+        },
+
+        "ROBOT":{
+
+            "sinonyms":["robot","cherrybot","gripper"],
+            "properties":{
+
+                "movement":["right","left","up","down","forward","ahead","backward","backwards","reverse"],
+                "distance":["mm","millimeters","millimeter","cm","centimeters","centimeter"],
+                "rotation":["roll","pitch","yaw"]
+        },
+            "actions":{
+
+                "status":["available","availability","free","occupied","accesible","busy","unavailable","engaged","taken","status"],
+                "actions":["move","shift","rotate","reset","start","initialize","desconnect","increase","decrease"],
+                "gripper":["open","close"]
+            },
+            "messages":{
+
+                "taken":"\n\n\nRobot isn't free.\n\nYou are not able to use it, try later",
+                "free":"\n\n\nRobot is free.\n\nYou can use it",
+                "error":"\n\n\nBad request.\n\nPlease try againg",
+                "bad_parameter": "\n\n\n Bad input parameter. \n\n Try again.",
+                "init_succes": "\n\n\n Robot Successfully initialized. \n\n You are able to use it",
+                "max_distance_gripper": "\n\n\n Gripper is at its maximum opening.",
+                "min_gripper_distance":"\n\n\n Gripper is totally closed.",
+                "distance_exceeded": "\n\n\n Bad input.\n\n Parameters had been exceeded.",
+                "bad_gripper_get": "\n\n\n Getting gripper data was wrong.",
+                "get_error":"\n\n\n Getting robot coordenates was wrong",
+                "not_distance":"\n\n\n Distance not specified",
+                "not_direction":"\n\n\n Direction not specified",
+                "success":"ok",
+                "fail":"\n\n\nRequest not identified.\n\n Please try again",
+                "bad_token":"\n\n\n Invalid token",
+                "delete_user":"\n\n\n User Successfully desconnected",
+                "issue":"\n\n\n Something was wrong. \n\n Is not possible to desconnect",
+                "not_reset":"\n\n\n Robot can't move to start position"
+            }
+        },
+        "ESP32":{
+            "wakeword":["Hello","Hi"]
+        }   
+    },
+
+    "PATTERNS":{
+
+        "pattern_names":["lamp_sinonyms","lamp_on","lamp_off","colors","color_verbs","rise_brightness","reduce_brightness",
+        "blind_sinonyms","blind_actions_up","blind_actions_down","blind_actions_stop",
+        "robot_sinonyms","robot_status","robot_movements","gripper_movements","robot_start",
+        "onoff","updown","numbers_pattern","mm_pattern","cm_pattern","robot_direction","robot_desconnect","robot_reset",
+        "wakeword"]
+    },
+
+    "INSTRUCTIONS":{
+
+        "lamp":{
+            "on":"",
+            "color":"",
+            "brightness":""
+        },
+
+        "blinds":{
+            "state":""
+        },
+
+        "robot":
+        {
+                "target":{
+                    "coordinate":{                
+                        "x":300,
+                        "y":0,
+                        "z":400
+                        },
+                    "rotation": {
+                        "roll": 180,
+                        "pitch": 0,
+                        "yaw": 0
+                    }
+                },
+                "speed":50
+            }
+        
+    },
+
+    "URLS":{
+        "lamp":"http://10.2.2.33:1880/r400/kimlamp",
+
+        "blinds":"http://10.2.2.2:1880/knx/floor_1/room_102/blinds",
+
+        "robot":{
+
+            "get":{
+
+                "operator": "https://api.interactions.ics.unisg.ch/cherrybot/operator",
+                "tcp": "https://api.interactions.ics.unisg.ch/cherrybot/tcp",
+                "target":"https://api.interactions.ics.unisg.ch/cherrybot/tcp/target",                
+                "gripper":"https://api.interactions.ics.unisg.ch/cherrybot/gripper"
+            },
+
+            "put":{
+
+                "initialize":"https://api.interactions.ics.unisg.ch/cherrybot/initialize",
+                "target":"https://api.interactions.ics.unisg.ch/cherrybot/tcp/target",
+                "gripper":"https://api.interactions.ics.unisg.ch/cherrybot/gripper"
+            },
+
+            "post":{
+                "operator":"https://api.interactions.ics.unisg.ch/cherrybot/operator"
+            },
+            "delete":{
+                "operator":"https://api.interactions.ics.unisg.ch/cherrybot/operator/"
+            }
+        }      
+    }
+}
+
+
+
+
+
+
+

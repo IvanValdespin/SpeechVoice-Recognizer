@@ -1,0 +1,67 @@
+{
+    "SENTENCES":{
+
+        "APPOINTMENT":{
+
+            "appointment1":"Agendar una cita para el dia jueves a las 7 y media de la mañana con el doctor Martinez",
+            "appointment2":"cita para mañana con el doctor Ivan Valdespin a las tres y cuarto de la tarde",
+            "appointment3":"hazme una cita con el medico temprano en 15 de enero"
+        },
+
+        "REMINDERS":{
+
+            "reminder1":"Recuerdame tomar mi medicina el dia de mañana a las 8 y cuarto de la mañana",
+            "reminder2":"acuerdame que tengo que tomar mi medicina hoy a las 7:20",
+            "reminder3":"recordar tomar mi medicamento a las 7 de la noche"
+        },
+
+        "SEARCH":{
+
+            "search1":"Busca informacion sobre la diabetes",
+            "search2":"dime como debo tomar mi medicamento para la diabetes",
+            "search3":"¿como se toman las pastillas de paracetamol?",
+            "search4":"buscame informacion sobre las personas con diabetes"
+            }
+    },
+
+    "BROKERFORMAT":{
+        "raw":"",
+        "action":"",
+        "search":"",
+        "place":"",
+        "physician":"",
+        "date":"",
+        "time":"",
+        "timestamp":"",
+        "user-id":"",
+        "issue":""
+    },
+
+    "FEATURES":{
+
+        "PHYSICIAN":["doctor","doctora","Dr.","Dra","medico"],
+        "DAYS":["lunes","martes","miercoles","jueves","viernes","sabado"],
+        "TIME_EXPRESSION":["media","cuarto"],
+        "TIME":["mañana","tarde","noche"],
+
+        "REQUEST":{
+
+            "fail":"Instrucción no reconocida.\n Por favor proporcione mas información o vuelva a repetir el comando",
+            "appointment":"Agendar cita",
+            "reminder":"Recordatorio de toma de medicamento",
+            "search":"Buscar información"
+        },
+
+        "PATTERNS":["physician_pattern",
+        "date_pattern1","date_pattern2","date_pattern3",
+        "time_pattern1","time_pattern2","time_pattern3","time_pattern4","time_pattern5",
+        "search_pattern1","search_pattern2","search_pattern3","search_pattern4",
+        "wake_word"]
+
+    },
+
+    "ESP32":{
+        "wakeword":["hello"]
+    }
+
+}
