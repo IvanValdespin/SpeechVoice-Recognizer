@@ -4,8 +4,8 @@
 #define WIFI_PSWD ""
 
 //Labnet-IP 
-#define WAKEWORD_URL "http://10.2.2.153:5000/wakeword"
-#define COMAND_URL "http://10.2.2.153:5000/esp32"
+#define WAKEWORD_URL "http://IP:5000/wakeword"
+#define COMAND_URL "http://IP:5000/esp32"
 
 
 //Microphone settings
